@@ -1,0 +1,291 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+  <meta charset="utf-8">   
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">   
+  <title>BCU 100.6 FM</title>   
+  <meta content="" name="description">   
+  <meta content="" name="keywords">   
+  <!-- Favicons -->   
+  <link href="assets/img/favicon.png" rel="icon">   
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">   
+  <!-- Google Fonts -->   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">   
+  <!-- Vendor CSS Files -->   
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">   
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">   
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">   
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">   
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">   
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">   
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">   
+  <!--Main CSS File -->   
+  <link href="assets/css/style.css" rel="stylesheet">   
+  <!--syle for new code --> 
+  <style> 
+    body { 
+      font-family: Arial, sans-serif; 
+      font-size: 16px; 
+    } 
+    h1 { 
+      text-align: center; 
+      margin-top: 20px; 
+    } 
+    ul { 
+      list-style-type: none; 
+      margin: 0; 
+      padding: 0; 
+    } 
+    li { 
+      display: inline-block; 
+      margin-right: 20px; 
+    } 
+    a { 
+      text-decoration: none; 
+      color: #000; 
+    } 
+    .dropdown-content { 
+      display: none; 
+      position: absolute; 
+      background-color: #f9f9f9; 
+      min-width: 160px; 
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+      z-index: 1; 
+    } 
+    .dropdown-content a { 
+      display: block; 
+      padding: 10px 16px; 
+      text-align: left; 
+    } 
+    .dropdown:hover .dropdown-content { 
+      display: block; 
+    } 
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+    } 
+    th, td { 
+      padding: 8px; 
+      text-align: left; 
+      border-bottom: 1px solid #ddd; 
+    } 
+    .listen-live { 
+      display: flex; 
+      justify-content: center; 
+      margin-top: 20px; 
+    } 
+    .listen-live a { 
+      display: inline-block; 
+      padding: 10px 20px; 
+      background-color: #f9f9f9; 
+      border: 1px solid #ddd; 
+      border-radius: 5px; 
+      text-decoration: none; 
+      color: #000; 
+    } 
+    .search { 
+      display: flex; 
+      justify-content: center; 
+      margin-top: 180px; 
+    } 
+    .search input[type="text"] { 
+      padding: 10px; 
+      width: 300px; 
+      border: 1px solid #ddd; 
+      border-radius: 5px; 
+    } 
+    .search input[type="submit"] { 
+      padding: 10px 20px; 
+      background-color: #f9f9f9; 
+      border: 1px solid #ddd; 
+      border-radius: 5px; 
+      margin-left: 300px; 
+      margin-bottom: 10px; 
+      cursor: pointer; 
+    } 
+    </style> 
+    <style> 
+      .listen-live { 
+        display: flex; 
+        justify-content: center; 
+        margin-top: 20px; 
+      } 
+      .listen-live a { 
+        display: inline-block; 
+        padding: 10px 20px; 
+        background-color: #f9f9f9; 
+        border: 1px solid #ddd; 
+        border-radius: 5px; 
+        text-decoration: none; 
+        color: #000; 
+      } 
+    </style> 
+    <script src="script.js"></script> 
+  <!--ends here--> 
+  <style>  
+    body {  
+        font-family: Arial, sans-serif;  
+        margin: 0;  
+        padding: 0;  
+    }  
+    header {  
+        background-color: #333;  
+        color: #fff;  
+        padding: 20px;  
+    }  
+    nav ul {  
+        list-style-type: none;  
+        margin: 0;  
+        padding: 0;  
+    }  
+    nav ul li {  
+        display: inline-block;  
+        position: relative;  
+    }  
+    nav ul li a {  
+        color: #fff;  
+        display: block;  
+        padding: 10px 20px;  
+        text-decoration: none;  
+    }  
+    nav ul li:hover > ul {  
+        display: block;  
+    }  
+    nav ul ul {  
+        display: none;  
+        position: absolute;  
+        top: 100%;  
+    }  
+    nav ul ul li {  
+        float: none;  
+        width: 200px;  
+    }  
+    nav ul ul a {  
+        background-color: #333;  
+        color: #fff;  
+        padding: 10px 20px;  
+    }  
+    section {  
+        padding: 20px;  
+    }  
+    footer {  
+        background-color: #333;  
+        color: #fff;  
+        padding: 20px;  
+        text-align: center;  
+    }  
+</style>  
+</head>   
+<body>   
+  <!-- ======= Header ======= -->   
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">   
+    <div class="container d-flex justify-content-between align-items-center">   
+      <div class="logo">   
+        <h1 class="text-light"><a href="index.html"><span>BUC</span></a></h1>   
+      </div>   
+      <nav id="navbar" class="navbar">   
+        <ul>  
+          <!-- ==new changes--> 
+<!--    -->       
+<li class="dropdown"> 
+  <a href="header.php" class="dropbtn" onclick="showDropdown('homeDropdown')">Home</a> 
+</li> 
+<!-- 
+          <li><a class="active" href="index.html">Home</a>  
+          </li>  --> 
+          <!----> 
+          </li> 
+          <li><a href="about.php">About</a></li>   
+          <li><a href="blogadmin/index.php">login</a></li>  
+<!--new code ends here-->  
+        </ul>   
+        <i class="bi bi-list mobile-nav-toggle"></i>   
+      </nav><!-- .navbar -->   
+    </div>   
+  </header><!-- End Header -->   
+  <!-- ======= Hero Section ======= -->   
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">   
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">   
+      <!-- Slide 1 -->   
+      <div class="carousel-item active">   
+        <div class="carousel-container">   
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>100.6 BUC FM </span></h2>   
+          <p class="animate__animated animate__fadeInUp">100.6 is the number one radio staion in mbale city.</p>  
+          <p class="animate__animated animate__fadeInUp"><a href="new updates.html" style="color: white;margin-left: 500px;">Trending News</a></p>   
+          <a href="#" class="btn-get-started animate__animated animate__fadeInUp"><section> 
+            <div id="live-player" class="listen-live"> 
+                <!-- Embed your live stream player here --> 
+                <audio controls> 
+                  <source src=" https://zeno.fm/fm/radio/bcu-fm-radio" type="audio/mpeg"> 
+                    Your browser does not support the audio element. 
+                </audio> 
+            </div> 
+        </section> 
+      </a>  
+          <!--live--> 
+        <section> 
+            <h6 style="color: #fff;">Now Playing</h6> 
+            <div id="now-playing"> 
+    <!--playing now--> 
+            </div> 
+        </section> 
+          <!--end here-->  
+        </div>   
+      </div>   
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">   
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>   
+      </a>   
+      <a   
+ class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">   
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>   
+      </a>   
+    </div>   
+  </section><!-- End Hero -->   
+  <!-- ======= Footer ======= -->   
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">    
+    <div class="footer-top">   
+      <div class="container">   
+        <div class="row">   
+          <div class="col-lg-3 col-md-6 footer-contact">   
+            <h4>Contact Us</h4>   
+            <p>   
+              Nabore road <br>opposite shine on<br> Building <br>   
+              Mbale<br>   
+            Uganda <br><br>   
+              <strong>Phone:</strong> +256 773428118<br>   
+              <strong>Email:</strong> info@buc.com<br>   
+            </p>   
+          </div>   
+          <div class="col-lg-3 col-md-6 footer-info">   
+            <h3>About BCU</h3>   
+            <p> BUC radio station, your number one radio sataion in mbale city and we are committed to providing personalized services tailored to your unique needs!.</p>   
+            <div class="social-links mt-3">   
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>   
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>   
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>   
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>   
+            </div>   
+          </div>   
+        </div>   
+      </div>   
+    </div>   
+    <div class="container">   
+      <div class="copyright">   
+        © Copyright <strong><span>BUC</span></strong>. All Rights Reserved BCU Mbale 2023   
+      </div>   
+      <div class="credits">   
+      </div>   
+    </div>   
+  </footer><!-- End Footer -->   
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>   
+  <!-- Vendor JS Files -->   
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>   
+  <script src="assets/vendor/aos/aos.js"></script>   
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>   
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>   
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>   
+  <script src="assets/vendor/swiper/sw   
+iper-bundle.min.js"></script>   
+  <script src="assets/js/main.js"></script>   
+</body>   
+</html>
